@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y \
 		libjpeg62-turbo-dev \
 		libpng-dev \
 		libicu-dev \
+		libzip-dev \
 	&& docker-php-source extract \
 	&& docker-php-ext-configure gd --with-freetype --with-jpeg \
 	&& docker-php-ext-configure intl \
